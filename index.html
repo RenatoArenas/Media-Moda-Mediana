@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--FONT AWESOME-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <h1 class="calculate-title">Calculadora de media, mediana y moda</h1>
+        <div class="calculate-container">
+            <p>Ingresar números separador por comas</p>
+            <textarea name="" id="numbers-area" placeholder="Ej: 1, 2, 3, 4, 5" onkeypress="return validarNumeros(event)" onpaste = "return false"></textarea>
+        </div>
+        <div class="calculate-info">
+            <div class="calculate-item">
+                <p id="average">Media: </p>
+            </div>
+            <div class="calculate-item">
+                <p id="median">Mediana: </p>
+            </div>
+            <div class="calculate-item">
+                <p id="mode-number">Cantidad de modas: </p>
+            </div>
+            <div class="calculate-item">
+                <p id="mode-amount">Cantidad de la moda: </p>
+            </div>
+            <div class="calculate-item">
+                <p id="mode">Moda: </p>
+            </div>
+            <div class="calculate-item">
+                <p id="numbers">Numeros (menor a mayor): </p>
+            </div>
+            <div class="calculate-item">
+                <p id="numbers-amount">Cantidad de números: </p>
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
